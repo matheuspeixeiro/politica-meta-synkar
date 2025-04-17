@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Política de Privacidade - Projeto SARA WhatsApp</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      max-width: 800px;
+      margin: 50px auto;
+      padding: 20px;
+      line-height: 1.6;
+      background-color: #f9f9f9;
+    }
+    h1 {
+      text-align: center;
+    }
+    #switch {
+      margin-bottom: 20px;
+      text-align: center;
+    }
+    .lang {
+      display: none;
+    }
+    .lang.active {
+      display: block;
+    }
+  </style>
+</head>
+<body>
+  <h1>Política de Privacidade / Privacy Policy</h1>
+  
+  <div id="switch">
+    <button onclick="switchLang('pt')">Português</button>
+    <button onclick="switchLang('en')">English</button>
+  </div>
+
+  <div id="pt" class="lang active">
+    <p>Este aplicativo utiliza a API do WhatsApp Business da Meta para enviar mensagens automatizadas relacionadas a operações internas da empresa Synkar.</p>
+    <p>Nenhum dado pessoal é armazenado ou compartilhado com terceiros. Todas as informações são tratadas com confidencialidade e utilizadas apenas para fins operacionais internos.</p>
+    <p>Se tiver dúvidas sobre nossa política de privacidade, entre em contato pelo e-mail <a href="mailto:contato@synkar.com">contato@synkar.com</a>.</p>
+  </div>
+
+  <div id="en" class="lang">
+    <p>This application uses Meta's WhatsApp Business API to send automated messages related to internal operations of the company Synkar.</p>
+    <p>No personal data is stored or shared with third parties. All information is handled confidentially and used solely for internal operational purposes.</p>
+    <p>If you have any questions about our privacy policy, please contact us at <a href="mailto:contato@synkar.com">contato@synkar.com</a>.</p>
+  </div>
+
+  <script>
+    function switchLang(lang) {
+      document.querySelectorAll('.lang').forEach(el => el.classList.remove('active'));
+      document.getElementById(lang).classList.add('active');
+    }
+  </script>
+</body>
+</html>
